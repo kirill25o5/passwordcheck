@@ -11,263 +11,263 @@ void getRussianWordsFromRussianEnglish(const std::string & password, std::string
     switch (*i)
     {
     case 'q':
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "ÍÛ", newPassword);
-      newPassword.append("Í");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∫—É", newPassword);
+      newPassword.append("–∫");
       break;
 
     case 'w':
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Û", newPassword);
-      newPassword.append("‚");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—É", newPassword);
+      newPassword.append("–≤");
       break;
 
     case 'e':
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ë", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "˝", newPassword);
-      newPassword.append("Â");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∏", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—ç", newPassword);
+      newPassword.append("–µ");
       break;
 
     case '3':
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ë", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "˝", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Á", newPassword);
-      newPassword.append("Â");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∏", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—ç", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∑", newPassword);
+      newPassword.append("–µ");
       break;
 
     case 'r':
-      newPassword.append("");
+      newPassword.append("—Ä");
       break;
 
     case 't':
-      newPassword.append("Ú");
+      newPassword.append("—Ç");
       break;
 
     case 'y':
       if (i + 1 != password.end() && *(i + 1) == 'a')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸ˇ", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "Ëˇ", newPassword);
-        newPassword.append("ˇ");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—è", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "–∏—è", newPassword);
+        newPassword.append("—è");
         i++;
         break;
       }
 
       if (i + 1 != password.end() && *(i + 1) == 'e')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸Â", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "ËÂ", newPassword);
-        newPassword.append("Â");
-        newPassword.append("Â");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å–µ", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "–∏–µ", newPassword);
+        newPassword.append("–µ");
+        newPassword.append("–µ");
         i++;
         break;
       }
 
       if (i + 1 != password.end() && *(i + 1) == 'o')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "ÈÓ", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸∏", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "˙∏", newPassword);
-        newPassword.append("∏");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "–π–æ", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—ë", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—ä—ë", newPassword);
+        newPassword.append("—ë");
         i++;
         break;
       }
 
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "˚", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ë", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "¸", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "˙", newPassword);
-      newPassword.append("È");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—ã", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∏", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—å", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—ä", newPassword);
+      newPassword.append("–π");
       break;
 
     case 'u':
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "˛", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "¸˛", newPassword);
-      newPassword.append("Û");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—é", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—å—é", newPassword);
+      newPassword.append("—É");
       break;
 
     case 'i':
     case '!':
       if (i + 1 != password.end() && *(i + 1) == 'a')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸ˇ", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "Ëˇ", newPassword);
-        newPassword.append("ˇ");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—è", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "–∏—è", newPassword);
+        newPassword.append("—è");
         i++;
         break;
       }
 
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "È", newPassword);
-      newPassword.append("Ë");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–π", newPassword);
+      newPassword.append("–∏");
       break;
 
     case '1':
       if (i + 1 != password.end() && *(i + 1) == 'a')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸ˇ", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "Ëˇ", newPassword);
-        newPassword.append("ˇ");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—è", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "–∏—è", newPassword);
+        newPassword.append("—è");
         i++;
         break;
       }
 
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Î", newPassword);
-      newPassword.append("Ë");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–ª", newPassword);
+      newPassword.append("–∏");
       break;
 
     case 'o':
     case '0':
-      newPassword.append("Ó");
+      newPassword.append("–æ");
       break;
 
     case 'p':
       if (i + 1 != password.end() && *(i + 1) == 'h')
       {
-        newPassword.append("Ù");
+        newPassword.append("—Ñ");
         i++;
         break;
       }
 
-      newPassword.append("Ô");
+      newPassword.append("–ø");
       break;
 
     case 'a':
     case '@':
-      newPassword.append("‡");
+      newPassword.append("–∞");
       break;
 
     case 's':
     case '$':
       if (i + 1 != password.end() && *(i + 1) == 'h')
       {
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ò", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¯", newPassword);
-        newPassword.append("˘");
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—Å", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—à", newPassword);
+        newPassword.append("—â");
         i++;
         break;
       }
-      newPassword.append("Ò");
+      newPassword.append("—Å");
       break;
 
     case 'd':
-      newPassword.append("‰");
+      newPassword.append("–¥");
       break;
 
     case 'f':
-      newPassword.append("Ù");
+      newPassword.append("—Ñ");
       break;
 
     case 'g':
-      newPassword.append("„");
+      newPassword.append("–≥");
       break;
 
     case 'h':
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "¯", newPassword);
-      newPassword.append("ı");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—à", newPassword);
+      newPassword.append("—Ö");
       break;
 
     case 'j':
       if (i + 1 != password.end() && *(i + 1) == 'a')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸ˇ", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "Ëˇ", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ê", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "‰Ê", newPassword);
-        newPassword.append("ˇ");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—è", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "–∏—è", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∂", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–¥–∂", newPassword);
+        newPassword.append("—è");
         i++;
         break;
       }
 
       if (i + 1 != password.end() && *(i + 1) == 'o')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "ÈÓ", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸∏", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "˙∏", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ê", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "‰Ê", newPassword);
-        newPassword.append("∏");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "–π–æ", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—ë", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—ä—ë", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∂", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–¥–∂", newPassword);
+        newPassword.append("—ë");
         i++;
         break;
       }
 
       if (i + 1 != password.end() && *(i + 1) == 'u')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸˛", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "˙˛", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ê", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "‰Ê", newPassword);
-        newPassword.append("˛");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—é", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—ä—é", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∂", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–¥–∂", newPassword);
+        newPassword.append("—é");
         i++;
         break;
       }
 
       if (i + 1 != password.end() && *(i + 1) == 'e')
       {
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸Â", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "˙Â", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "¸∏", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "˙∏", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ê", newPassword);
-        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "‰Ê", newPassword);
-        newPassword.append("Â");
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å–µ", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—ä–µ", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—å—ë", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 2, passwords, "—ä—ë", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∂", newPassword);
+        getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–¥–∂", newPassword);
+        newPassword.append("–µ");
         i++;
         break;
       }
 
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "¸", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "˙", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ê", newPassword);
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "È", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—å", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—ä", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–∂", newPassword);
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "–π", newPassword);
 
-      newPassword.append("‰Ê");
+      newPassword.append("–¥–∂");
       break;
 
     case 'k':
-      newPassword.append("Í");
+      newPassword.append("–∫");
       break;
 
     case 'l':
-      newPassword.append("Î");
+      newPassword.append("–ª");
       break;
 
     case 'z':
-      newPassword.append("Á");
+      newPassword.append("–∑");
       break;
 
     case 'x':
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "ı", newPassword);
-      newPassword.append("ÍÒ");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—Ö", newPassword);
+      newPassword.append("–∫—Å");
       break;
 
     case 'c':
       if (i + 1 != password.end() && *(i + 1) == 'h')
       {
-        newPassword.append("˜");
+        newPassword.append("—á");
         i++;
         break;
       }
 
-      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "Ò", newPassword);
-      newPassword.append("Í");
+      getRussianWordsFromRussianEnglish(password, i + 1, passwords, "—Å", newPassword);
+      newPassword.append("–∫");
       break;
 
     case '4':
-      newPassword.append("˜");
+      newPassword.append("—á");
       break;
 
     case 'v':
-      newPassword.append("‚");
+      newPassword.append("–≤");
       break;
 
     case 'b':
     case '6':
-      newPassword.append("·");
+      newPassword.append("–±");
       break;
 
     case 'n':
-      newPassword.append("Ì");
+      newPassword.append("–Ω");
       break;
 
     case 'm':
-      newPassword.append("Ï");
+      newPassword.append("–º");
       break;
 
     default:
@@ -290,135 +290,135 @@ std::string getRussianWordFromEnglishLetters(const std::string & password)
     switch (i)
     {
     case 'q':
-      newPasssword.append("È");
+      newPasssword.append("–π");
       break;
 
     case 'w':
-      newPasssword.append("ˆ");
+      newPasssword.append("—Ü");
       break;
 
     case 'e':
-      newPasssword.append("Û");
+      newPasssword.append("—É");
       break;
 
     case 'r':
-      newPasssword.append("Í");
+      newPasssword.append("–∫");
       break;
 
     case 't':
-      newPasssword.append("Â");
+      newPasssword.append("–µ");
       break;
 
     case 'y':
-      newPasssword.append("Ì");
+      newPasssword.append("–Ω");
       break;
 
     case 'u':
-      newPasssword.append("„");
+      newPasssword.append("–≥");
       break;
 
     case 'i':
-      newPasssword.append("¯");
+      newPasssword.append("—à");
       break;
 
     case 'o':
-      newPasssword.append("˘");
+      newPasssword.append("—â");
       break;
 
     case 'p':
     case '3':
-      newPasssword.append("Á");
+      newPasssword.append("–∑");
       break;
 
     case '[':
-      newPasssword.append("ı");
+      newPasssword.append("—Ö");
       break;
 
     case ']':
-      newPasssword.append("˙");
+      newPasssword.append("—ä");
       break;
 
     case 'a':
-      newPasssword.append("Ù");
+      newPasssword.append("—Ñ");
       break;
 
     case 's':
-      newPasssword.append("˚");
+      newPasssword.append("—ã");
       break;
 
     case 'd':
-      newPasssword.append("‚");
+      newPasssword.append("–≤");
       break;
 
     case 'f':
     case '@':
-      newPasssword.append("‡");
+      newPasssword.append("–∞");
       break;
 
     case 'g':
-      newPasssword.append("Ô");
+      newPasssword.append("–ø");
       break;
 
     case 'h':
-      newPasssword.append("");
+      newPasssword.append("—Ä");
       break;
 
     case 'j':
     case '0':
-      newPasssword.append("Ó");
+      newPasssword.append("–æ");
       break;
 
     case 'k':
-      newPasssword.append("Î");
+      newPasssword.append("–ª");
       break;
 
     case 'l':
-      newPasssword.append("‰");
+      newPasssword.append("–¥");
       break;
 
     case ';':
-      newPasssword.append("Ê");
+      newPasssword.append("–∂");
       break;
 
     case '\'':
-      newPasssword.append("˝");
+      newPasssword.append("—ç");
       break;
 
     case 'z':
-      newPasssword.append("ˇ");
+      newPasssword.append("—è");
       break;
 
     case 'x':
     case '4':
-      newPasssword.append("˜");
+      newPasssword.append("—á");
       break;
 
     case 'c':
-      newPasssword.append("Ò");
+      newPasssword.append("—Å");
       break;
 
     case 'v':
-      newPasssword.append("Ï");
+      newPasssword.append("–º");
       break;
 
     case 'b':
-      newPasssword.append("Ë");
+      newPasssword.append("–∏");
       break;
 
     case 'n':
-      newPasssword.append("Ú");
+      newPasssword.append("—Ç");
       break;
 
     case 'm':
-      newPasssword.append("¸");
+      newPasssword.append("—å");
       break;
 
     case ',':
-      newPasssword.append("·");
+      newPasssword.append("–±");
       break;
 
     case '.':
-      newPasssword.append("˛");
+      newPasssword.append("—é");
       break;
 
     default:
@@ -512,7 +512,7 @@ bool getLowerCaseSet(const std::string_view & first3character, bool isRussian, c
     {
       boost::algorithm::to_lower(line, loc);
       if (isRussian)
-        boost::algorithm::ireplace_all(line, "∏", "Â", loc);
+        boost::algorithm::ireplace_all(line, "—ë", "–µ", loc);
       if (boost::algorithm::istarts_with(line, first3character, loc) == false)
         break;
       data.insert(line);
@@ -576,7 +576,7 @@ void getWordsFromPasswordForParticularCase(const std::string & password, bool is
 
   std::string passwordCopy = boost::algorithm::to_lower_copy(password, loc);
   if (isRussian)
-    boost::algorithm::ireplace_all(passwordCopy, "∏", "Â", loc);
+    boost::algorithm::ireplace_all(passwordCopy, "—ë", "–µ", loc);
 
   std::string_view passwordSW = passwordCopy;
   for (int pos = 0; pos < passwordCopy.size() - 2; pos++)
